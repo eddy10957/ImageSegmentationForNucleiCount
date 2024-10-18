@@ -1,7 +1,16 @@
 # Image Segmentation For Nuclei Count
-Progetto per l'esame di Sistemi Multimediali.
+# Cell Counting in Microscope Images
 
-Nel seguente elaborato, verrà analizzato un sistema per la conta delle cellule presenti in un'immagine di un campione prodotta da un microscopio confocale. Il processo della conta delle cellule è alla base di numerosi esperimenti in ambito biologico o medico, le immagini analizzate sono state prese da campioni di cellule neuronali.
+This project implements an automated cell counting system for confocal microscope images of neuronal cell samples. It uses various image processing techniques to identify and count individual cells. Key features include:
+
+1. Image preprocessing: Thresholding, morphological operations, and border clearing
+2. Cell segmentation: Distance transform and watershed algorithm
+3. Feature extraction: Measures properties like area, diameter, and intensity of identified cells
+4. Data analysis: Converts pixel measurements to micrometers and exports results to CSV
+
+The script uses libraries such as OpenCV, NumPy, scikit-image, and pandas for image processing and data manipulation. It processes DAPI-stained images, focusing on the blue channel for nuclei detection.
+
+This tool automates a crucial step in biological and medical research, providing quantitative data on cell populations in microscope images.
 
 ## Gallery:
 
